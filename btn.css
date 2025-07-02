@@ -43,7 +43,6 @@
   box-shadow: #3c4fe0 0 3px 7px inset;
   transform: translateY(2px);
 }
-/* Base styles for the button container */
 .button-container {
   display: flex;
   flex-direction: column; /* Stacks buttons vertically */
@@ -70,5 +69,4 @@
 }
 
 .button:hover {
-  background-color: #0056b3; /* Darker shade on hover */
-}
+  background-color: #0056b3;
