@@ -20,6 +20,7 @@ malloc.js
 mira_ldr.js
 netcat.js
 payload.js
+payload.bin
 pl_app2usb.bin
 pl_appdumper.bin
 pl_ArabicGuy100.bin.bz2
@@ -82,7 +83,8 @@ pl_WildeModz_146.bin.bz2
 pl_WildeModz_147.bin.bz2
 pl_wtsb.bin
 relocator.js
-rop.js
+rop.
+sw.js
 rop_sleirs.js
 syscalls.js
 syscalls2.js
