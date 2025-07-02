@@ -1,5 +1,5 @@
 // اسم الكاش الخاص بك - قم بتغييره عند تحديث الملفات المخزنة مؤقتًا
-const CACHE_NAME = 'alssoury-station-cache-v1.2';
+const CACHE_NAME = 'alssoury-station-cache-v1.3';
 
 // قائمة بالمسارات التي تريد تخزينها مؤقتًا تلقائيًا عند تثبيت Service Worker
 const urlsToCache = [
