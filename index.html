@@ -28,11 +28,20 @@ function awaitpl() {
 }
 
 function jbdone() {
-  progress.style.display = "none";
-  mymenu.style.display = "block";
-  msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Host Menu Loaded!!!</h1>";
-}
+            var loadingContainer = document.getElementById("loadingContainer");
+            var mymenu = document.getElementById("mymenu");
+            var msgs = document.getElementById("msgs");
 
+            if (loadingContainer) {
+                loadingContainer.style.display = "none"; // إخفاء حاوية التحميل
+            }
+            if (mymenu) {
+                mymenu.style.display = "block";         // إظهار القائمة الرئيسية
+            }
+            if (msgs) {
+                msgs.innerHTML = "Ready! ALssouRy_Station 900FW Exploit Host Auto Method Lite";
+            }
+          }
 function wk_keep_alive()
 {
     var xhr = new XMLHttpRequest();
@@ -699,18 +708,24 @@ loadPayloadDataBz2();
 }
 </script>
 </head>
-<body onload="jbdone();">
-<div id="msgs" class="info"></div>
+<body onload="jbdone();" style="text-align: center;margin-top: 5%;">
 
-<div id="loadingContainer" style="display:none;">
-    <div id="progress" class="info" style="display:block;">
-        <h1 style="font-size:25px;text-align:center;">Loading Exploit... Please Wait!</h1>
-    </div>
-</div>
+    <div id="msgs" class="info"></div>
 
-<div id="mymenu" style="display:none;margin-top: 15%;" align="center">
+    <div id="loadingContainer" style="display:block;">
+        <div id="progress" class="info" style="display:block;">
+            <h1 style="font-size:25px;text-align:center;">Loading Exploit... Please Wait!</h1>
+        </div>
     </div>
-    </div>
+
+    <div id="mymenu" style="display:none;margin-top: 15%;" align="center">
+        <p><button class="btnkme" onclick="load_exploit_900();" onMouseOver="msgs.innerHTML='GoldHEN 2.24 For PS4 9.00FW'" onmouseout="msgs.innerHTML='ALssouRy_Station 900FW Exploit Host (Auto Method) Lite'">GoldHEN Without USB</button></p>
+        </div>
+
+    <div id="PS4fw" style="display:none;"></div>
+    <div id="passCounter" style="display:none;"></div>
+    <div id="failCounter" style="display:none;"></div>
+
     <div style="margin-top:20px;">
     <p><button class="btnkme" onclick="load_exploit_900();">GoldHEN Without USB</button></p>
         </div>
